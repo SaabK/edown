@@ -5,8 +5,9 @@ import { services } from "../data/data";
 function Service() {
   return (
     <section id="service" className="container">
-      {services.map((service) => (
+      {services.map((service, index) => (
         <ServiceCard
+          key={index}
           image={service.image}
           title={service.title}
           description={service.description}
@@ -29,7 +30,7 @@ export const ServiceCard = ({
           <h3>{title}</h3>
           <img src={arrow} />
         </div>
-        <p>{description}</p>
+        <p className="body">{description}</p>
       </div>
     </div>
   );

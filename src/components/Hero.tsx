@@ -5,38 +5,45 @@ import dropbox from "../assets/dropbox.svg";
 
 function Hero() {
   return (
-    <section id="hero" className="container">
-      <div>
-        <h1>Ultimate support system for leading agencies</h1>
+    <section id="hero">
+      <div className="container flex items-center">
+        <div className="text-content">
+          <h1>Ultimate support system for leading agencies</h1>
 
-        <p>
-          Get your tests delivered at let home collect sample from the victory
-          of the managements that supplies best design guidelines ever.
-        </p>
+          <p>
+            Get your tests delivered at let home collect sample from the victory
+            of the managements that supplies best design guidelines ever.
+          </p>
 
-        <form>
-          <input type="email" name="email" id="email" />
-          <button className="btn btn-primary">Get Started</button>
-        </form>
+          <form className="newsletter">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email address"
+            />
+            <button className="btn btn-primary">Get Started</button>
+          </form>
 
-        <div>
-          <span>Sponsored by: </span>
-          <ul role="list">
-            <li>
-              <img src={paypal} alt="paypal" />
-            </li>
-            <li>
-              <img src={google} alt="google" />
-            </li>
-            <li>
-              <img src={dropbox} alt="dropbox" />
-            </li>
-          </ul>
+          <div className="sponsors">
+            <span>Sponsored by: </span>
+            <ul role="list">
+              <li>
+                <img src={paypal} alt="paypal" />
+              </li>
+              <li>
+                <img src={google} alt="google" />
+              </li>
+              <li>
+                <img src={dropbox} alt="dropbox" />
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <img src={illustration} />
+        <div className="hero-image">
+          <img src={illustration} />
+        </div>
       </div>
     </section>
   );

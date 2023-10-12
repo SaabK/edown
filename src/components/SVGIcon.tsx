@@ -18,8 +18,8 @@ function SVGIcon({
     >
       <path
         opacity={opacity}
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d={d}
         fill={pathFill}
       />
